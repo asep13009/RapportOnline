@@ -12,3 +12,4 @@ def prime(bilangan):
 tes=prime(2)
 
 print(tes)
+#cobain
