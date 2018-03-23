@@ -1,4 +1,5 @@
 #Segitiga
+#coba2
 
 a = ""
 bar = 1
