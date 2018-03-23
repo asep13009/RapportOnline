@@ -10,5 +10,7 @@ def prime(bilangan):
 tes= prime(5)
 print(tes)
 
+#ubah
+
 
 
