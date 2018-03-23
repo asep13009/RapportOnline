@@ -1,16 +1,14 @@
+#coba
 def prime(bilangan):
-    count = 0
-    for i in range(1,bilangan+1):
-        if(bilangan %i==0):
-            count+=1
-    if (count==2):
+    count1=0
+    for i in range (1,bilangan):
+        if (bilangan%i==0):
+            count1 +=1
+    if (count1==2):
         return "prime"
     else:
         return "not prime"
-tes= prime(5)
+
+tes=prime(2)
+
 print(tes)
-
-#ubah
-
-
-
