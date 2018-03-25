@@ -11,9 +11,10 @@ def isSafe(maze, x, y):
         return True
     return False
 
+
 def solveMaze(maze):
     sol = [[0 for j in range(8)] for i in range(8)
-    ]
+           ]
 
     if solveMazeUtil(maze, inputan1, inputan2, sol) == False:
         print("Solution doesn't exist");
@@ -21,8 +22,9 @@ def solveMaze(maze):
     printSolution(sol)
     return True
 
+
 def solveMazeUtil(maze, x, y, sol):
-    if x == N -1 and y == N-3:
+    if x == N - 1 and y == N - 3:
         sol[x][y] = "x"
         return True
 
@@ -31,23 +33,26 @@ def solveMazeUtil(maze, x, y, sol):
 
         if solveMazeUtil(maze, x + 1, y, sol) == True:
             return True
-        if solveMazeUtil(maze, x, y+1, sol) == True:
+        if solveMazeUtil(maze, x, y + 1, sol) == True:
             return True
-        if solveMazeUtil(maze, x, y-1, sol) == True:
+        if solveMazeUtil(maze, x, y - 1, sol) == True:
             return True
         return False
-if __name__ == "__main__":
 
+
+if __name__ == "__main__":
     maze = [
-                [1,1,1,0,1,1,1,1],
-                [1,1,0,0,0,1,1,0],
-                [1,1,1,1,1,1,1,0],
-                [1,1,1,1,1,1,1,0],
-                [0,0,0,1,1,1,1,0],
-                [1,1,1,0,0,1,1,0],
-                [1,1,1,1,1,1,0,1],
-                [1,1,1,1,0,0,1,1]
+        [1, 1, 1, 0, 1, 1, 1, 1],
+        [1, 1, 0, 0, 0, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 0],
+        [0, 0, 0, 1, 1, 1, 1, 0],
+        [1, 1, 1, 0, 0, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 0, 1],
+        [1, 1, 1, 1, 0, 0, 1, 1]
     ]
-    inputan1=int(input("masukan input 0-3 Contoh 0 : "))
-    inputan2=int(input("masukan input2 0-7 Contoh 1: "))
+    inputan1 = int(input("masukan input 0-3 Contoh 0 : "))
+    inputan2 = int(input("masukan input2 0-7 Contoh 1: "))
     solveMaze(maze)
+
+
